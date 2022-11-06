@@ -16,6 +16,7 @@ html{
 
 .header-container {
   min-width: 320px;
+  overflow-x: hidden;
   /* width: 1920px; */
   /* min-width: 1770px; */
   position: relative;
@@ -26,7 +27,7 @@ html{
 .header-cont__item {
   display: flex;
   position: relative;
-  left: 75px;
+  left: var(--gap);
   top: 14px;
 }
 
@@ -53,7 +54,8 @@ html{
   display: flex;
   position: absolute;
   top: 39px;
-  right: 75px;
+  /* left: 729px; */
+  right: var(--gap);
   /* align-items: center;
   display: inline-block;
   position: relative;
@@ -92,8 +94,14 @@ html{
 
 .main-container {
   position: relative;
-  width: 1770px;
   margin: 0 var(--gap) 0 var(--gap);
+}
+
+.sec-decisions {
+  background-image: url("../img/low-angle-photo-of-balconies-2462015\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
 }
 
 .sec-about-us {

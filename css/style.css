@@ -23,6 +23,7 @@ html{
   height: 100px;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
+  border-radius: 0px 0px 32px 32px;
 }
 
 .header-cont__item {
@@ -55,13 +56,12 @@ html{
   display: flex;
   position: absolute;
   top: 39px;
-  /* left: 729px; */
-  right: var(--gap);
-  /* align-items: center;
-  display: inline-block;
-  position: relative;
-  top: 39px;
-  left: 729px; */
+  right: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .list-nav__ref {
@@ -80,6 +80,7 @@ html{
 
 .list-nav__item:last-child {
   margin-right: 0;
+  margin: 0 0 0 260px;
 }
 
 .faq__btn {
@@ -166,11 +167,13 @@ html{
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+  margin-bottom: 50px;
 }
 
 .list-about-us {
+  max-height: 622px;
   flex-wrap: wrap;
-  /* flex-direction:row-reverse; */
+  flex-direction:column;
 }
 
 .list-about-us__item {
@@ -179,32 +182,83 @@ html{
   background: #FFFFFF;
   border: 1px solid #CACACA;
   border-radius: 32px;
+  margin: 0 0 32px 32px;
+  position: relative;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.sec-about-us-container-card {
+  position: absolute;
+  max-width: 452px;
+  max-height: 157px;
+  top: 22px;
+  right: 118px;
 }
 
 .list-about-us__item:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
   width: 868px;
   height: 622px;
-  background-color: gray;
-  /* background: url(image.png); */
-  background-repeat:no-repeat;
-  background-size: cover;
   border-radius: 32px;
+  margin: 0;
 }
 
-/* .list-about-us__item:last-child {
-  width: 868px;
-  height: 622px;
-  background-color: gray;
-  background: url("");
+.list-about-us__item_img {
+  /* background-color: gray; */
+  background: url("../img/Rectangle 2.png");
   background-repeat:no-repeat;
   background-size: cover;
-  border-radius: 32px;
-} */
+
+}
+
+.list-about-us__item:last-child {
+  margin-bottom:0;
+}
+
+.list-about-us_h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 8px;
+}
 
 /* Как мы работаем */
 
 .sec-work {
   margin-bottom: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+.sec-work__h {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.sec-work-menu {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 45px;
+}
+
+.sec-work-menu__item {
+  margin-right: 85px;
+}
+
+.sec-work-menu__item:last-child {
+  margin: 0;
+}
+
+.sec-work__container {
+  max-width: 758px;
 }
 
 /* Часто задаваемые вопросы */

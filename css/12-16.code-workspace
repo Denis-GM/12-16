@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "12-16",
+			"path": ".."
+		},
+		{
+			"path": "../../Downloads/Landing---Evclid--main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "12-16"
+	}
+}

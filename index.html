@@ -9,30 +9,37 @@
     <link rel="stylesheet" href="./font/stylesheet.css">
   </head>
   <body>
-    <header class="header-container">
-      <a href="#" class="header-cont__item"><img src="img/Logo.png" class="main-logo" alt="main-logo"></a>
-      <nav class="header-nav">
-        <ul class="list_reset list_flex list-nav">
-          <li class="list-nav__item">
-            <a href="#" class="list-nav__ref">О нас</a>
-          </li>
-          <li class="list-nav__item">
-            <a href="#" class="list-nav__ref">Проекты</a>
-          </li>
-          <li class="list-nav__item">
-            <a href="#" class="list-nav__ref">Этапы</a>
-          </li>
-          <li class="list-nav__item">
-            <a href="#" class="list-nav__ref">Отзывы</a>
-          </li>
-          <li class="list-nav__item">
-            <a href="#" class="list-nav__ref">Контакты</a>
-          </li>
-          <li class="list-nav__item">
-            <a href="#" class="list-nav__ref"><img src="img/search.svg" alt="search"></a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container header__container">
+        <button class="burger btn-reset">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a href="" class="logo header__logo">
+          <img class="logo__img" src="./img/Logo.svg" alt="Логотип">
+        </a>
+        <div class="header__inner">
+          <nav class="nav">
+            <button class="menu-close btn-reset"></button>
+            <ul class="nav__list list-reset">
+              <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Этапы</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="search">
+            <span>
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
+              <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </header>
     <main class="main-container">
       <section class="sec-decisions">
@@ -42,31 +49,35 @@
           <a href="#" class="sec-decisions__btn">Заказать расчёт</a>
         </div>
       </section>
-      <section class="sec-about-us">
+      <section class="sec-about-us" id="about-us">
         <h2 class="sec-about-us__h">О нас</h2>
-        <p class="sec-about-us__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+        <p class="sec-about-us__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
         <ul class="list-about-us list_flex list_reset">
-          <li class="list-about-us__item list-about-us__item_img">
-            <div>
-              Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
-              <a href="#">Подробнее</a>
+          <li class="list-about-us__item list-about-us__item_img1">
+            <div class="card-content">
+              <ul class="card-list list_flex list_reset">
+                <li class="card-list__item card-content__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</li>
+                <li class="card-list__item">
+                  <a href="#" class="card-content__btn">Подробнее</a>
+                </li>
+              </ul>
             </div>
           </li>
-          <li class="list-about-us__item">
+          <li class="list-about-us__item list-about-us__item_img2">
             <div class="container-card">
-            <h3 class="list-about-us_h2">Консультация с широким активом</h3>
+            <h3 class="card__h">Консультация с широким активом</h3>
             <span class="card__text">А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</span>
             </div>
           </li>
-          <li class="list-about-us__item">
-            <div class="sec-about-us-container-card">
-            <h3 class="list-about-us_h2">В своём стремлении повысить </h3>
-            <span class="sec-about-us__text">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</span>
+          <li class="list-about-us__item list-about-us__item_img3">
+            <div class="container-card">
+            <h3 class="card__h">В своём стремлении повысить </h3>
+            <span class="card__text">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</span>
             </div>
           </li>
         </ul>
       </section>
-      <section class="sec-work">
+      <section class="sec-work" id="work" >
         <h2 class="sec-work__h">Как мы работаем</h2>
         <ul class="sec-work-menu list_flex list_reset">
           <li class="sec-work-menu__item">1 шаг</li>
@@ -76,49 +87,63 @@
         </ul>
         <div class="sec-work__container">
           <h3 class="sec-work__h2">Проводим консультацию</h3>
-          Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
-          <a href="#" class="btn-contract">Договор</a>
-          <a href="#" class="btn-more">Подробнее</a>
+          <div class="sec-work__text">
+            <p>Влечёт за собой процесс внедрения и модернизации приоритизации разума над&nbsp;эмоциями. В рамках спецификации современных стандартов, некоторые особенности&nbsp;внутренней политики будут объективно рассмотрены соответствующими инстанциями.</p>
+            <p>А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+          </div>
+          <div class="container-btn">
+            <a href="#" class="btn-more">Подробнее</a>
+            <a href="#" class="btn-contract">Договор</a>
+          </div>
         </div>
       </section>
-      <section class="FAQ">
-        <h2>Часто задаваемые вопросы</h2>
-        <ul>
-          <li>Из чего формируется конечная стоимость проекта? <button class="faq__btn"></button></li>
-          <li>У меня есть свой проект. Сможем ли мы его доработать / реализовать? <button class="faq__btn"></button></li>
-          <li>Я выбираю между разными компаниями. В чём ваше отличие? <button class="faq__btn"></button></li>
-          <li>Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? <button class="faq__btn"></button></li>
-          <li>Могу ли я вернуть деньги на каком-либо из этапов работ? <button class="faq__btn"></button></li>
+      <section class="FAQ" id="FAQ">
+        <h2 class="FAQ__h">Часто задаваемые вопросы</h2>
+        <ul class="container-questions list_reset">
+          <li class="container-questions__item">Из чего формируется конечная стоимость проекта? <button class="faq__btn"></button></li>
+          <li class="container-questions__item">У меня есть свой проект. Сможем ли мы его доработать / реализовать? <button class="faq__btn"></button></li>
+          <li class="container-questions__item">Я выбираю между разными компаниями. В чём ваше отличие? <button class="faq__btn"></button></li>
+          <li class="container-questions__item">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? <button class="faq__btn"></button></li>
+          <li class="container-questions__item">Могу ли я вернуть деньги на каком-либо из этапов работ? <button class="faq__btn"></button></li>
         </ul>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li>
-          <img src="./img/Logo2.svg" alt="main-logo">
-          <ul>
+    <footer class="footer">
+      <ul class="list_reset footer__list list_flex">
+        <li class="footer__block">
+          <img src="./img/Logo2.svg" class="footer-logo" alt="main-logo">
+          <ul class="footer-list-nav list_reset">
             <li>О нас</li>
             <li>Проекты</li>
             <li>Отзывы</li>
             <li>Договор оферты</li>
             <li>Договор подряда</li>
             <li>Конфиденциальность</li>
-            <li>Партнёрское соглашение</li>
+            <li>Партнёрское&nbsp;соглашение</li>
           </ul>
-          <img src="./img/fb.svg" alt="fb">
-          <img src="./img/vk.svg" alt="vk">
-          <img src="./img/instagram.svg" alt="instagram">
+          <div class="footer-social-net">
+            <img src="./img/ok.svg" class="footer-social-net__item" alt="ok">
+            <img src="./img/Vector.svg" class="footer-social-net__item" alt="vk">
+          </div>
         </li>
-        <li>
-          <h3>Оставить заявку</h3>
-          <input type="text"name="name" placeholder="Фамилия, имя и отчество*" required>
-          <input type="email" name="email" placeholder="E-mail*" required>
-          <textarea name="msg" cols="30" rows="10" placeholder="Сообщение"></textarea>
-          <input type="submit">
-          <input type="checkbox" name="consent" value="Согласен на обработку данных">
+        <li class="footer__block">
+          <form action="" class="footer__form">
+            <h3 class="footer-form__h">Оставить заявку</h3>
+            <input type="text"name="name" class="footer-form__input footer-form__item" placeholder="Фамилия, имя и отчество*" required>
+            <input type="email" name="email" class="footer-form__input footer-form__item" placeholder="Email*" required>
+            <textarea name="msg"  class="footer-form__textarea footer-form__item" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <div class="form__inner">
+              <button class="footer-form__btn">Отправить данные</button>
+              <label class="form__label">
+                <input class="checkbox" type="checkbox">
+                <span class="checkbox-text">Согласен на обработку данных</span>
+                
+            </label>
+            </div>
+          </form>
         </li>
-        <li>
-          Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
+        <li class="footer__block footer__text">
+          Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого&nbsp;факта:&nbsp;разбавленное&nbsp;изрядной долей&nbsp;эмпатии,&nbsp;рациональное&nbsp;мышление позволяет оценить значение модели развития. Таким образом, консультация с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании стандартных подходов.
         </li>
       </ul>
     </footer>

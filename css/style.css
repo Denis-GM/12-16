@@ -16,7 +16,9 @@ p, h1, h2, h3 {
 :root {
   --gap: 75px;
   --grey: #cacaca;
+  --dark-grey: #666666;
   --yellow: #ff9900;
+  --light-yellow: #FFB84D;
   --orange: #E1670E;
 }
 
@@ -183,11 +185,23 @@ p, h1, h2, h3 {
   font-size: 23px;
   line-height: 28px;
   text-align: center;
-  background: #ff9900;
+  background: var(--yellow);
   border-radius: 16px;
   text-decoration: none;
   color: #fff;
   padding: 25px 39px;
+}
+
+.sec-decisions__btn:hover {
+  background: #FFB84D;
+}
+
+.sec-decisions__btn:focus {
+  background: #FFB84D;
+}
+
+.sec-decisions__btn:active {
+  background: var(--orange);
 }
 
 /* О нас */
@@ -280,11 +294,24 @@ p, h1, h2, h3 {
   padding: 20px 38px 20px;
   /* width: 175px;
   height: 60px; */
-  border: 3px solid #FF9900;
+  border: 3px solid var(--yellow);
   border-radius: 16px;
   text-align: center;
   color: #fff;
   text-decoration: none;
+}
+
+.card-content__btn:hover {
+  background: var(--yellow);
+}
+
+.card-content__btn:focus {
+  background: var(--yellow);
+}
+
+.card-content__btn:active {
+  background: var(--orange);
+  border-color: var(--orange);
 }
 
 .container-card {
@@ -369,6 +396,8 @@ p, h1, h2, h3 {
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 45px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .sec-work-menu__item {
@@ -377,6 +406,25 @@ p, h1, h2, h3 {
 
 .sec-work-menu__item:last-child {
   margin: 0;
+}
+
+.steps {
+  padding-right: 2px;
+  padding-left: 2px;
+  text-decoration: none;
+  color: #000;
+}
+
+.steps:hover {
+  color: var(--yellow);
+}
+
+.steps:focus {
+  border: 2px solid #FF9900;
+}
+
+.steps:active {
+  color: var(--orange);
 }
 
 .sec-work__container {
@@ -406,6 +454,7 @@ p, h1, h2, h3 {
 
 .btn-contract {
   /* position: relative; */
+  color: #000;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -413,6 +462,23 @@ p, h1, h2, h3 {
   border: 1px solid #000000;
   border-radius: 16px;
   padding: 20px 38px;
+}
+
+.btn-contract:hover {
+  background: var(--dark-grey);
+  color: #fff;
+  border-color: var(--dark-grey);
+}
+
+.btn-contract:focus {
+  background: var(--dark-grey);
+  color: #fff;
+  border-color: var(--dark-grey);
+}
+
+.btn-contract:active {
+  color: #fff;
+  background: #000;
 }
 
 .btn-more {
@@ -426,6 +492,19 @@ p, h1, h2, h3 {
   font-size: 16px;
   line-height: 20px;
   margin-right: 28px;
+}
+
+.btn-more:hover {
+  background: var(--light-yellow);
+}
+
+.btn-more:focus {
+  background: var(--light-yellow);
+}
+
+.btn-more:active {
+  background: var(--orange);
+  border-color: var(--orange);
 }
 
 /* Часто задаваемые вопросы */
@@ -455,7 +534,42 @@ p, h1, h2, h3 {
   padding-top: 39px;
   padding-bottom: 39px;
   border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
 }
+
+.FAQ_question {
+  
+}
+
+.FAQ_question:hover {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.FAQ_question:hover  {
+  border-color: var(--yellow);
+}
+
+.FAQ_question:hover ellipse{
+  fill: var(--yellow);
+}
+
+.FAQ_question:hover path{
+  stroke: #fff;
+}
+
+.FAQ_question:focus {
+
+}
+
+.FAQ_question:focus {
+  border-color: var(--yellow);
+}
+
+.FAQ_question:active {
+
+}
+
 
 .faq__btn {
   position: absolute;
@@ -463,7 +577,7 @@ p, h1, h2, h3 {
   top: 31px;
   width: 50px;
   height: 50px;
-  background-image: url('../img/+х.svg');
+  /* background-image: url('../img/+х.svg'); */
   background-repeat: no-repeat;
   background-size: cover;
   border: none;

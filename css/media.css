@@ -1,0 +1,17 @@
+@media (max-width: 1024px){
+    .burger-open {
+        display: inline-block;
+    }
+
+    .header-cont__item {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 320px){
+    
+}
